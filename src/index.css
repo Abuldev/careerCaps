@@ -1,0 +1,1003 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif !important;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background: #f5f5f5 !important;
+}
+
+html {
+    scroll-behavior: smooth!important;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.DefaultBg {
+    background: linear-gradient(89.92deg, #3000d6 0.07%, #3dd0f0 99.93%);
+}
+
+.minHeight {
+    min-height: 560px;
+}
+
+.minHeightLayer {
+    min-height: 290px;
+}
+
+.ant-spin-container {
+    min-height: calc(100vh - 100px);
+}
+
+.minHeightLayerForYou {
+    min-height: 538px;
+}
+.defaultImgWidthCatalog{
+    min-height: 206px;
+    max-height: 206px;
+    min-width: 250px;
+    object-fit: contain;
+}
+.imgLayerBackground{
+    background-repeat: no-repeat !important;
+    background-position: center!important;
+    background-size: cover !important;
+}
+.imgLayerForYou{
+    width: 100% !important;
+    height: 100% !important;
+    top: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(48, 2, 214, 0.72), rgba(48, 2, 214, 0.72));
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+.imgLayerForYou h1{
+    opacity: 1;
+    z-index: 12;
+}
+
+
+a {
+    text-decoration: none !important;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0 !important;
+}
+
+ul {
+    margin-left: -30px;
+}
+
+.ant-progress-text {
+    transition: .3s;
+    text-align: center !important;
+    margin-bottom: 5px;
+    font-size: 10px !important;
+    transform: scale(1.3);
+    animation: animatedClock 1s ease infinite !important;
+}
+
+@keyframes animatedClock {
+    0%, 100% {
+        color: rgb(215, 175, 175);
+    }
+    50% {
+        color: #000;
+    }
+}
+
+.fontSize {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+}
+.ant-progress-inner{
+    overflow: visible !important;
+}
+.ant-progress-bg::after{
+    content: attr(data-content-bg);
+    color: white;
+    width: 43px;
+    height: 24px;
+    background: #000000;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top:-8px;
+    
+}
+.ant-progress-circle{
+    position: relative;
+    border-radius: 30px;
+}
+.ant-progress-circle circle::after{
+    content: "kk";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: #FFFFFF;
+border: 5.29915px solid #3107D7;
+box-shadow: 0px 15px 15px rgba(49, 14, 216, 0.33);
+border-radius: 50%;
+position: absolute;
+top: 0;
+right: 0;
+}
+.ant-progress-circle{
+    width: 230px;
+    margin-bottom: 40px !important;
+}
+.ant-progress-circle .ant-progress-circle-path{
+    /* transform: rotate(180deg) !important; */
+    /* stroke-dasharray: 137, 273.319 !important; */
+}
+
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 1px 2px rgba(rgb(55, 55, 251), blue, rgb(6, 30, 245), 0.1) !important;
+}
+
+.borderLink {
+    border-bottom: 1.5px solid transparent;
+}
+
+/* .modal-dialog{
+  max-width: 80% !important;
+  padding: 30px;
+} */
+.modal-content {
+    border: 1px solid transparent !important;
+}
+
+.modal-lg {
+    max-width: 1300px !important;
+}
+
+.modal-lg .modal-dialog {
+    margin: 1.75rem 50px !important;
+    width: 90% !important;
+    max-width: 100% !important;
+}
+
+.reytingButton {
+    padding: 12px 26px;
+    border-radius: 88px;
+    border: 2px solid #000;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    line-height: 20px;
+    background-color: transparent;
+    color: black;
+    transition: all 0.3s;
+}
+
+.accordion-button {
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    line-height: 32px !important;
+    border-top: 1px solid !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    padding-left: 0 !important;
+    background: none !important;
+}
+
+.accordion-button:focus {
+    border-color: black !important;
+    box-shadow: none !important;
+    border-right-color: transparent !important;
+    border-left-color: transparent !important;
+}
+
+.accordion-header {
+    background: transparent !important;
+}
+
+.accordion-body {
+    background: transparent !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 32px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black !important;
+}
+
+.accordion-item {
+    background: none !important;
+    border: none !important;
+    /* padding-left: 0 !important; */
+    border-radius: 0 !important;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+/* webkit scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0076d6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #036abe;
+}
+
+.hr1 {
+    margin: 10px 0;
+}
+
+.minHeightAbout {
+    min-height: 500px;
+}
+
+.maxWidthPAbuot {
+    max-width: 880px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.maxwidthP {
+    max-width: 475px;
+    padding-right: 15px;
+}
+
+.minHeightImg {
+    min-height: 114px !important;
+}
+
+.iconLoadingWrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1 !important;
+}
+
+.icon_loading {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.job_img__3{
+    width: 180px;
+    border-radius: 50%;
+    height: 180px;
+    object-fit: cover;
+    padding: 6px;
+    background: white;
+}
+
+/* home page */
+.title {
+    font-size: 45px;
+    font-weight: 600 !important;
+    color: white;
+}
+.marginTopSalary{
+    margin-top: -30px !important;
+    transform: translateY(-11px);
+}
+.subtitle {
+    font-size: 25px;
+    font-weight: 500 !important;
+}
+
+.cardmaker {
+    transition: 0.3s;
+    border: 1px solid rgb(251, 246, 246);
+    padding: 10px 30px 0 11% !important;
+    background: white !important;
+}
+
+.cardmaker:hover {
+    box-shadow: 0px 4px 65px rgba(0, 0, 0, 0.05);
+}
+
+.cardmaker h2 {
+    /* font-weight: 500 !important; */
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+}
+
+.cardmaker p {
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 32px;
+}
+
+.bigH1 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.02em;
+    max-width: 800px;
+}
+
+.layerH1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 55px;
+}
+
+.aboutH1 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px;
+    color: white;
+}
+
+.aboutP {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.defaultH1 {
+    font-size: 35px !important;
+    font-weight: 600;
+    /* color: white; */
+    line-height: 42.67px;
+}
+
+.salaryH1 {
+    font-size: 35px !important;
+    line-height: 43px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.progress__own{
+    position: relative;
+    margin: 4px;
+    float:left;
+    text-align: center;
+}
+.barOverflow__own{ /* Wraps the rotating .bar */
+    position: relative;
+    overflow: hidden; /* Comment this line to understand the trick */
+    width: 90px; height: 45px; /* Half circle (overflow) */
+    margin-bottom: -14px; /* bring the numbers up */
+}
+.bar__own{
+    position: absolute;
+    top: 0; left: 0;
+    width: 90px; height: 90px; /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 5px solid #eee;     /* half gray, */
+    border-bottom-color: #0bf;  /* half azure */
+    border-right-color: #0bf;
+}
+
+.colorH1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 55px;
+    color: #423b51;
+}
+
+.defaultP {
+    font-weight: 400 !important;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.testP {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.mediumP {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.careerCapsBg {
+    background: linear-gradient(
+            0deg,
+            rgba(48, 2, 214, 0.72),
+            rgba(48, 2, 214, 0.72)
+    ),
+    url(./assets/images/Rectangle\ 3126.png);
+    min-height: 500px;
+    padding: 0 13%;
+}
+
+.careerCapsBg p {
+    font-weight: 400;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+.networksSection p {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+/* components Footer */
+.minHeightFooter {
+    min-height: 58px;
+}
+
+/* font weight */
+
+.fw-300 {
+    font-weight: 300 !important;
+}
+
+.fw-400 {
+    font-weight: 400 !important;
+}
+
+.fw-500 {
+    font-weight: 500 !important;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.fw-700 {
+    font-weight: 700 !important;
+}
+
+/* jobsCatalogPage */
+.searchButton {
+    background: linear-gradient(3.17deg, #3000d6 -14.65%, #3dd0f0 114.25%);
+    box-shadow: 0px 10px 20px rgba(50, 61, 198, 0.26);
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 15px 42px;
+    border: none;
+    color: white;
+    line-height: 20px;
+}
+
+.searchInputBox {
+    background: url(./assets/images/search.png) no-repeat left;
+    background-position: 22px;
+    max-width: 500px;
+    min-width: 82%;
+    /* background: #ffffff; */
+    border: 1px solid #c7c7c7;
+    border-radius: 100px;
+    padding: 7px 10px 7px 50px;
+}
+
+.searchInputBox .searchInput {
+    border: none;
+    font-size: 16px;
+    line-height: 20px;
+    outline: none !important;
+    width: 90%;
+    background-color: transparent;
+    padding: 9px 0 9px 0;
+}
+
+.jobsCard {
+    background: #ffffff;
+    box-shadow: 0px 2px 2px rgba(190, 190, 190, 0.25);
+    border-radius: 10px;
+    /* align-items: flex-end !important; */
+    transition: all 0.3s ease;
+}
+
+.jobsCard:hover {
+    box-shadow: 0px 7px 7px 5px rgba(172, 170, 170, 0.25);
+}
+
+.goJob {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    width: 45px !important;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    font-weight: 900;
+    transition: 0.3s;
+    background: linear-gradient(89.92deg, #3000d6 0.07%, #3dd0f0 99.93%);
+    background-size: 150%;
+    color: white;
+    cursor: pointer;
+}
+
+.goJob:hover {
+    background-position: right;
+    color: white;
+}
+
+.align-self {
+    align-self: flex-end;
+}
+
+.onlineButton {
+    background: linear-gradient(89.92deg, #3000d6 0.07%, #3dd0f0 99.93%);
+    border-radius: 88px;
+    padding: 5px 24px;
+    padding-right: 55px;
+    border: none;
+    color: white;
+}
+
+.offlineButton {
+    border: 2px solid #000000;
+    border-radius: 88px;
+    padding: 5px 26px;
+    background: none;
+    transition: 0.3s;
+}
+
+.offlineButton:hover {
+    background: #000000;
+    color: white;
+}
+
+.jobsListCard {
+    border: 2px solid #ececec;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.jobsListCard:hover {
+    box-shadow: 0px 7px 7px 5px rgba(172, 170, 170, 0.25);
+}
+
+.jobsListCard img:first-child {
+    position: relative;
+}
+
+.jobsListCard img:last-child {
+    position: absolute;
+    left: -17px;
+    top: -17px;
+}
+
+.jobsListImg {
+    width: 150px;
+    height: 150px;
+}
+
+.JobsListTitle {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+}
+
+.JobsListdescription {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.layerRelative {
+    position: relative;
+}
+
+.layerAbsolute {
+    position: absolute;
+    right: 10%;
+    top: -150px;
+}
+
+.soya {
+    background: #ffffff;
+    box-shadow: 0px 4px 65px rgba(0, 0, 0, 0.05);
+}
+
+.paddingInline {
+    padding-left: 6.5% !important;
+}
+
+.heightAuto {
+    height: 100% !important;
+}
+
+.nameH3 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 28px;
+}
+
+.titleH3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.networkIcons {
+    font-size: 20px;
+}
+
+@media (min-width: 989.9px) and (max-width: 1200px) {
+    .modal-lg {
+        max-width: 1000px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .modal-lg {
+        max-width: 900px !important;
+    }
+
+    .goJob {
+        top: 10px;
+        right: 10px;
+    }
+
+    .maxWidthPAbuot {
+        padding: 0 10%;
+    }
+
+    .paddingInline {
+        padding: 0 !important;
+    }
+
+    .layerAbsolute {
+        position: absolute;
+        right: 10%;
+        top: -40px;
+    }
+
+    ._4GdcU{
+        white-space: normal!important;
+    }
+
+    .layerH1 {
+        font-size: 40px;
+    }
+
+    .jobsListWrap {
+        flex-wrap: wrap;
+    }
+
+    .positionImage {
+        width: 200px;
+        height: 200px;
+    }
+
+    .searchInputBox {
+        min-width: 74%;
+    }
+
+    .jobsCard {
+        text-align: center !important;
+    }
+
+    .jobsButton {
+        gap: 1rem !important;
+    }
+
+    .jobsSalary {
+        margin-top: 20px !important;
+    }
+
+    .jobsListWrap {
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .jobsListWrap h3 {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 447px) and (max-width: 767.9px) {
+    .goJob {
+        top: 10px;
+        right: 10px;
+    }
+
+    .maxWidthPAbuot {
+        padding: 0 7%;
+    }
+
+    .heightAuto {
+        height: 50% !important;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    .heightAuto button {
+        padding: 10px 18px;
+        font-size: 16px;
+    }
+
+    .blackBtnPosition {
+        position: static !important;
+        margin-top: 30px;
+    }
+
+    .textCenter {
+        text-align: center;
+    }
+
+    .layerH1 {
+        text-align: center;
+    }
+
+    .layerAbsolute {
+        display: none;
+    }
+
+
+    .jobsListWrap {
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .jobsListWrap h3 {
+        margin-top: 20px;
+    }
+
+    .defaultH1 {
+        font-size: 30px !important;
+    }
+
+    .salaryH1 {
+        font-size: 30px !important;
+    }
+
+    .jobsCard {
+        text-align: center !important;
+    }
+
+    .jobsButton {
+        gap: 1rem !important;
+        justify-content: center;
+    }
+
+    .jobsSalary {
+        margin-top: 20px !important;
+    }
+
+    .searchFormBox {
+        flex-wrap: wrap !important;
+    }
+
+    .centered {
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .searchInputBox {
+        text-align: center;
+        width: 100%;
+    }
+
+    .mainHome {
+        text-align: center;
+    }
+
+    .mainHome .subtitle {
+        margin-bottom: 0;
+    }
+
+    .positionImage {
+        display: none;
+    }
+
+    h1 {
+        font-size: 30px !important;
+    }
+
+    p {
+        font-size: 18px !important;
+    }
+
+    .cardmaker {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cardmaker p {
+        font-size: 18px !important;
+    }
+
+    .cardmaker h2 {
+        font-size: 30px !important;
+    }
+
+    .outBtn {
+        padding: 8px 25px !important;
+    }
+
+    .menu {
+        height: 400px !important;
+        text-align: center !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 0) and (max-width: 446.9px) {
+    .menu {
+        height: 500px !important;
+    }
+
+    .goJob {
+        top: 5px;
+        right: 5px;
+
+    }
+
+    .maxWidthPAbuot {
+        padding: 0 7%;
+    }
+
+    .maxWidthPAbuot p {
+        line-height: 1.4 !important;
+    }
+
+    .heightAuto {
+        height: 50% !important;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    .heightAuto button {
+        /* text-align: center; */
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .blackBtnPosition {
+        position: static !important;
+        padding: 10px 18px !important;
+        font-size: 15px !important;
+    }
+
+    .textCenter {
+        text-align: center;
+    }
+
+    .jobsListWrap {
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .jobsListWrap h3 {
+        font-size: 23px !important;
+        margin-top: 20px;
+    }
+
+    .jobsListWrap p {
+        font-size: 14.5px !important;
+    }
+
+    .defaultH1 {
+        font-size: 30px !important;
+    }
+
+    .salaryH1 {
+        font-size: 25px !important;
+    }
+
+    .jobsCard {
+        text-align: center !important;
+    }
+
+    .searchFormBox {
+        flex-wrap: wrap !important;
+    }
+
+    .centered {
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .searchInputBox {
+        text-align: center;
+        width: 100%;
+    }
+
+    .mainHome {
+        text-align: center;
+    }
+
+    .mainHome .subtitle {
+        margin-bottom: 0;
+    }
+
+    .positionImage {
+        display: none;
+    }
+
+    h1 {
+        font-size: 26px !important;
+    }
+
+    p {
+        font-size: 15px !important;
+        line-height: 1;
+    }
+
+    .cardmaker {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        /* padding-top: 30px !important; */
+    }
+
+    .cardmaker p {
+        font-size: 16px !important;
+    }
+
+    .cardmaker h2 {
+        font-size: 30px !important;
+    }
+
+    .outBtn {
+        padding: 6px 15px !important;
+        margin-bottom: 20px;
+    }
+
+    .jobsButton {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .offlineButton {
+        padding: 6px 15px !important;
+        font-size: 15px;
+    }
+
+    .onlineButton {
+        padding: 6px !important;
+        font-size: 15px;
+    }
+
+    .layerAbsolute {
+        display: none;
+    }
+}

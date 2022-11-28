@@ -1,0 +1,14 @@
+._4GdcU{
+    white-space: normal;
+}
+
+.img_size_match{
+    background-repeat:no-repeat!important;
+    background-size: contain!important;
+}
+
+/*.link-img-wrapper{*/
+/*    background-color: red;*/
+/*    -webkit-mask: url(attr(data-image-av)) no-repeat center;*/
+/*    mask: url(attr(data-image-av) no-repeat center;*/
+/*}*/
